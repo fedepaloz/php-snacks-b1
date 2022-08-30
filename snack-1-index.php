@@ -53,9 +53,9 @@ $partite = [
         <?php for ($i=0; $i < count($partite) ; $i++) : ?> 
         <li>
             <h1><?=$partite[$i]["casa"]?></h1>
-            <h2>20</h2>
-            <h1>lazio</h1>
-            <h2>10</h2>
+            <h2><?=$partite[$i]["ospite"]?></h2>
+            <h1><?=$partite[$i]["punti-casa"]?></h1>
+            <h2><?=$partite[$i]["punti-ospite"]?></h2>
          
         </li>
     <?php endfor; ?> 
