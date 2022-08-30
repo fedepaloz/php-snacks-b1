@@ -25,11 +25,22 @@ $partite = [
 "ospite" => "torino",
 "punti-casa" => "10",
 "punti-ospite" => "80"],
+
+["casa" => "termoli",
+"ospite" => "viterbo",
+"punti-casa" => "20",
+"punti-ospite" => "10"],
     
 ];
 
-for ($i=0; $i < count($partite[$i]); $i++) { 
-    echo ($partite[$i])
-};
+for ($i=0; $i < count($partite) ; $i++) { 
+    echo ($partite[$i]["casa"]);
+    echo ($partite[$i]["ospite"]);
+    echo($partite[$i]["punti-casa"]);
+    echo($partite[$i]["punti-ospite"]);
+
+}
 
 ?>
+
+
