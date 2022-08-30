@@ -5,16 +5,26 @@
 <?php
 
 $mail= $_GET['mail'] ?? '';
+$name= $_GET['name'] ?? '';
+$age = $_GET['age'] ?? '';
 
-if  (!str_contains($mail,'@') || !str_contains($mail,'.') ) {
-   
-        echo 'accesso negato';
-    }
-    
-else {
+
+if (str_contains($mail,'@') & str_contains($mail,'.')) {
+    echo 'accesso riuscito';
+} elseif ((strlen($name) > 3)) {
+echo 'accesso riuscito'; 
+}
+elseif ((is_numeric($age))) {
     echo 'accesso riuscito';
 }
+else {
+    echo 'accesso negato';
+}
 
+
+  
 ?>
+
+
 
 
